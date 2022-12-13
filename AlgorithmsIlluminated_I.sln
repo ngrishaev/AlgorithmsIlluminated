@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsIlluminated_I", "AlgorithmsIlluminated_I\AlgorithmsIlluminated_I.csproj", "{9C79934C-AF29-4071-AC80-87298B2944B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{9956A03B-76FD-4550-86AB-13F8EF9BDC78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C79934C-AF29-4071-AC80-87298B2944B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C79934C-AF29-4071-AC80-87298B2944B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C79934C-AF29-4071-AC80-87298B2944B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C79934C-AF29-4071-AC80-87298B2944B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9956A03B-76FD-4550-86AB-13F8EF9BDC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9956A03B-76FD-4550-86AB-13F8EF9BDC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9956A03B-76FD-4550-86AB-13F8EF9BDC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9956A03B-76FD-4550-86AB-13F8EF9BDC78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
