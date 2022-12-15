@@ -43,26 +43,27 @@ public class IntroductionTests
         
         Assert.IsTrue(output == expected, $"Expected {expected}, but got {output}");
     }
-    
-    [TestCase(new []{1})]
-    [TestCase(new []{3, 1})]
-    [TestCase(new []{3, 1, 2})]
-    [TestCase(new []{3, 1, 2, 0})]
+
+    [TestCase(new[] { 1 })]
+    [TestCase(new[] { 3, 1 })]
+    [TestCase(new[] { 3, 1, 2 })]
+    [TestCase(new[] { 3, 1, 2, 0 })]
+    [TestCase(new[] { 3, 1, 2, 0, 28, 17, 33, 11, 57, 45, 117, 4, 357, 15, 9 })]
     public void MergeSort(int[] array)
     {
         var toSort = new int[array.Length];
         Array.Copy(array, toSort, array.Length);
-        
+
         Introduction.MergeSort(toSort);
-        
+
         Assert.IsTrue(
             Helpers.IsSorted(toSort),
             $"Array {array} is not sorted"
-            );
+        );
         Assert.IsTrue(
             Helpers.SameElements(array, toSort),
             $"Array {ArrayToString(array)} is not contain same elements as {ArrayToString(toSort)}"
-            );
+        );
     }
 
     public string ArrayToString(int[] array)

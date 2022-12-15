@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace AlgorithmsIlluminated_I.DivideAndConquer;
+﻿namespace AlgorithmsIlluminated_I.DivideAndConquer;
 
 public static class DivideAndConquer
 {
