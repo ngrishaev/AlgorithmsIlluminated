@@ -177,6 +177,56 @@ public class SearchTree
             DeleteFullParent(toDeletion);
     }
 
+    public int Select(int index)
+    {
+        int Select(int index, Node root)
+        {
+            var leftSize = root.Left?.Size ?? 0;
+
+            if(index < leftSize)
+                return Select(index, root.Left!);
+            if (index > leftSize)
+                return Select(index - leftSize - 1, root.Right!);
+            
+            return root.Key;
+        }
+        
+        if(_root == null)
+            throw new InvalidOperationException($"Cant get {index} element in empty tree");
+        if(_root.Size < index)
+            throw new InvalidOperationException($"Cant get {index} element in tree with size {_root.Size}");
+        
+        return Select(index, _root);
+    }
+    
+    public int SelectIterative(int index)
+    {
+        if(_root == null)
+            throw new InvalidOperationException($"Cant get {index} element in empty tree");
+        if(_root.Size < index)
+            throw new InvalidOperationException($"Cant get {index} element in tree with size {_root.Size}");
+
+        var currentNode = _root;
+        var leftSize = currentNode.Left?.Size ?? 0;
+        while (leftSize != index)
+        {
+            if (index < leftSize)
+            {
+                currentNode = currentNode.Left;
+                index = index;
+            }
+            else
+            {
+                currentNode = currentNode.Right;
+                index = index - leftSize - 1;
+            }
+            
+            leftSize = currentNode.Left?.Size ?? 0;
+        }
+
+        return currentNode.Key;
+    }
+
     private Node MaxInSubtree(Node treeRoot)
     {
         while (treeRoot.Right != null)
@@ -231,9 +281,7 @@ public class SearchTree
             Left = new Node(value) { Parent = this };
         }
 
-        public override string ToString()
-        {
-            return Key.ToString();
-        }
+        public int Size => (Left?.Size ?? 0) + (Right?.Size ?? 0) + 1;
+        public override string ToString() => Key.ToString();
     }
 }

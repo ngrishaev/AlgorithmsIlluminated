@@ -139,4 +139,40 @@ public class SearchTreeTests
         
         Assert.Pass();
     }
+    
+    [Test]
+    public void TestSelect()
+    {
+        var tree = new SearchTree();
+        
+        tree.Insert(3);
+        tree.Insert(1);
+        tree.Insert(5);
+        tree.Insert(4);
+        tree.Insert(2);
+        
+        Assert.AreEqual(tree.Select(0), 1);
+        Assert.AreEqual(tree.Select(1), 2);
+        Assert.AreEqual(tree.Select(2), 3);
+        Assert.AreEqual(tree.Select(3), 4);
+        Assert.AreEqual(tree.Select(4), 5);
+    }
+    
+    [Test]
+    public void TestSelectIterative()
+    {
+        var tree = new SearchTree();
+        
+        tree.Insert(3);
+        tree.Insert(1);
+        tree.Insert(5);
+        tree.Insert(4);
+        tree.Insert(2);
+        
+        Assert.AreEqual(tree.SelectIterative(0), 1);
+        Assert.AreEqual(tree.SelectIterative(1), 2);
+        Assert.AreEqual(tree.SelectIterative(2), 3);
+        Assert.AreEqual(tree.SelectIterative(3), 4);
+        Assert.AreEqual(tree.SelectIterative(4), 5);
+    }
 }
