@@ -1,7 +1,7 @@
-﻿using AlgorithmsIlluminated_I.LinearTimeSelections;
+﻿using AlgorithmsIlluminated_I.BookI.LinearTimeSelections;
 using NUnit.Framework;
 
-namespace Tests;
+namespace Tests.BookI;
 
 [TestFixture]
 public class SelectionTests

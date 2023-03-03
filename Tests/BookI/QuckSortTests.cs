@@ -2,7 +2,7 @@
 using System.Linq;
 using NUnit.Framework;
 
-namespace Tests;
+namespace Tests.BookI;
 
 [TestFixture]
 public class QuckSortTests
@@ -17,7 +17,7 @@ public class QuckSortTests
         var toSort = new int[array.Length];
         Array.Copy(array, toSort, array.Length);
         
-        AlgorithmsIlluminated_I.QuickSort.QuickSort.QuickSorting(toSort);
+        AlgorithmsIlluminated_I.BookI.QuickSort.QuickSort.QuickSorting(toSort);
         
         Assert.IsTrue(
             Helpers.IsSorted(toSort),

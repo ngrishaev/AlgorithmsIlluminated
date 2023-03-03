@@ -1,7 +1,7 @@
-﻿using AlgorithmsIlluminated_I.DivideAndConquer;
+﻿using AlgorithmsIlluminated_I.BookI.DivideAndConquer;
 using NUnit.Framework;
 
-namespace Tests;
+namespace Tests.BookI;
 
 public class DivideAndConquerTests
 {

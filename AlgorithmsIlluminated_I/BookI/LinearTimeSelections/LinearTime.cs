@@ -1,10 +1,11 @@
-﻿namespace AlgorithmsIlluminated_I.LinearTimeSelections;
+﻿namespace AlgorithmsIlluminated_I.BookI.LinearTimeSelections;
 
 public static class LinearTime
 {
     public static int RSelect(int[] input, int ithOrder)
     {
-        void Swap(int[] array, int index1, int index2) => (array[index1], array[index2]) = (array[index2], array[index1]);
+        void Swap(int[] array, int index1, int index2) =>
+            (array[index1], array[index2]) = (array[index2], array[index1]);
         
         int ChoosePivot(int[] array, int left, int right)
         {

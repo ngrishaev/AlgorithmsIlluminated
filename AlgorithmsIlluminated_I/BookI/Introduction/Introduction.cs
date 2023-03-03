@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsIlluminated_I.Introduction;
+﻿namespace AlgorithmsIlluminated_I.BookI.Introduction;
 
 public static class Introduction
 {
@@ -58,11 +58,10 @@ public static class Introduction
         
         void Sort(int[] a, int sortFrom, int sortTo)
         {
-            var len = sortTo - sortFrom;
-            if (len <= 1)
+            if ( sortFrom >= sortTo - 1)
                 return;
 
-            var middle = sortFrom + len / 2;
+            var middle = sortFrom + (sortTo - sortFrom) / 2;
         
             Sort(a, sortFrom, middle);
             Sort(a, middle, sortTo);

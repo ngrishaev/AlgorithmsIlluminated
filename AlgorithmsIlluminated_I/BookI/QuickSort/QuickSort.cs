@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsIlluminated_I.QuickSort;
+﻿namespace AlgorithmsIlluminated_I.BookI.QuickSort;
 
 public static class QuickSort
 {
@@ -38,7 +38,6 @@ public static class QuickSort
             
             SortImplementation(input, left, newPivot);
             SortImplementation(input, newPivot + 1, right);
-            
         }
 
         SortImplementation(input, 0, input.Length);

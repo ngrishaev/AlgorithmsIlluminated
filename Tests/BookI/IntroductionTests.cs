@@ -1,9 +1,9 @@
 using System;
 using System.Linq;
-using AlgorithmsIlluminated_I.Introduction;
+using AlgorithmsIlluminated_I.BookI.Introduction;
 using NUnit.Framework;
 
-namespace Tests;
+namespace Tests.BookI;
 
 public class IntroductionTests
 {

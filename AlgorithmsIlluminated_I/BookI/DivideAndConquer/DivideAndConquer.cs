@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsIlluminated_I.DivideAndConquer;
+﻿namespace AlgorithmsIlluminated_I.BookI.DivideAndConquer;
 
 public static class DivideAndConquer
 {
