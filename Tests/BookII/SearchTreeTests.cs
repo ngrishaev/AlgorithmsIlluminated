@@ -54,10 +54,10 @@ public class SearchTreeTests
         tree.Insert(1);
         tree.Insert(3);
         
-        Assert.AreEqual(tree.Predecessor(2), 1);
-        Assert.AreEqual(tree.Predecessor(3), 2);
-        Assert.AreEqual(tree.Predecessor(4), 3);
-        Assert.AreEqual(tree.Predecessor(5), 4);
+        Assert.AreEqual(tree.Predecessor(2).value, 1);
+        Assert.AreEqual(tree.Predecessor(3).value, 2);
+        Assert.AreEqual(tree.Predecessor(4).value, 3);
+        Assert.AreEqual(tree.Predecessor(5).value, 4);
     }
 
     [Test]
